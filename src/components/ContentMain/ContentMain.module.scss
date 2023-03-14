@@ -12,13 +12,14 @@
   h1 {
     margin-bottom: 30px;
   }
-  h3 {font-family: $font-secondary; }
+  h3 {
+    font-family: $font-secondary;
+  }
 
   strong {
     font-weight: 900;
-    background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%);
+    background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%);
     @include gradient-text;
-
   }
 }
 
@@ -31,7 +32,7 @@
     text-transform: uppercase;
     letter-spacing: 0.05em;
 
-    background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+    background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
     @include gradient-text;
   }
 }
@@ -49,6 +50,7 @@
     font-weight: 500;
     margin-bottom: 0.375em;
   }
-  p { font-family: $font-secondary; }
-
+  p {
+    font-family: $font-secondary;
+  }
 }

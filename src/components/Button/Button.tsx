@@ -1,13 +1,11 @@
-import s from "./Button.module.scss"
+import s from "./Button.module.scss";
 
 interface ButtonProps {
-    text: String
+  text: String;
 }
 
-function Button({text}: ButtonProps) {
-    return (
-        <button className={s.btn}>{text}</button>
-    )
+function Button({ text }: ButtonProps) {
+  return <button className={s.btn}>{text}</button>;
 }
 
-export default Button
+export default Button;

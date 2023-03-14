@@ -1,8 +1,9 @@
 import { fileURLToPath, URL } from "url";
 
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import autoprefixer from 'autoprefixer'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import postcssCustomMedia from "postcss-custom-media";
+import autoprefixer from "autoprefixer";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -18,9 +19,7 @@ export default defineConfig({
       localsConvention: "camelCase",
     },
     postcss: {
-      plugins: [
-        autoprefixer({}) // add options if needed
-      ],
-    }
-  }
-})
+      plugins: [postcssCustomMedia, autoprefixer({})],
+    },
+  },
+});
