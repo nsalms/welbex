@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  margin-top: 37px;
+  margin-bottom: 110px;
+  font-weight: 500;
+}
+
+.logo {
+  width: 165px;
+  margin-right: 27px;
+  position: relative;
+
+  &__image {
+    //margin-bottom: 10px;
+  }
+
+  &__sub {
+    position: absolute;
+    width: 140px;
+    margin-top: 10px;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-right: auto;
+  gap: 30px;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+
+  &__tel {
+    margin: 0 47px;
+  }
+}

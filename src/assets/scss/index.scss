@@ -1,0 +1,73 @@
+@use "icons";
+
+:root {
+  --font-fallback: Avenir, Helvetica, Arial, sans-serif;
+  --font-body: Inter, var(--font-fallback);
+  --font-heading: 'Montserrat', var(--font-fallback);
+  --line-height: 1.2;
+
+  --text-color: #E4E5EA;
+  --bg-color: #1E1E1E;
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: var(--line-height);
+
+  color-scheme: light dark;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  line-height: var(--line-height);
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+h6 {
+  font-weight: 300;
+  font-size: 0.625rem;
+}
+
+
+
+
+.container {
+  width: 73.25em;
+  margin: 0 auto;
+  padding: 0 1em;
+}

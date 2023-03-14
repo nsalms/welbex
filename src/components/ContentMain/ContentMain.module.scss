@@ -1,0 +1,56 @@
+.main {
+  display: flex;
+}
+
+.main-heading {
+  margin-right: auto;
+
+  h1 {
+    margin-bottom: 30px;
+    font-family: var(--font-body);
+
+  }
+
+  strong {
+    font-weight: 900;
+    background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%);
+    @include gradient-text;
+
+  }
+}
+
+.main-side {
+  margin-top: 15px;
+  text-align: right;
+
+  h3 {
+    font-family: var(--font-body);
+
+  }
+  strong {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+    @include gradient-text;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+
+  font-family: var(--font-heading);
+
+  h3 {
+    font-family: var(--font-body);
+
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    margin-bottom: 0.375em;
+  }
+}
