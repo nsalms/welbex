@@ -1,4 +1,5 @@
 import s from './ContentMain.module.scss'
+import Button from "../Button/Button";
 
 function ContentMain() {
 
@@ -22,22 +23,24 @@ function ContentMain() {
                 <div className={s.grid}>
                     <div>
                         <h3>Виджеты</h3>
-                        30&nbsp;готовых<br/>решений
+                        <p>30&nbsp;готовых<br/>решений</p>
                     </div>
                     <div>
                         <h3>Dashboard</h3>
-                        с&nbsp;показателями<br/>вашего бизнеса
+                        <p>с&nbsp;показателями<br/>вашего бизнеса</p>
                     </div>
                     <div>
                         <h3>Skype Аудит</h3>
-                        отдела продаж<br/>и&nbsp;CRM системы
+                        <p>отдела продаж<br/>и&nbsp;CRM системы</p>
                     </div>
                     <div>
                         <h3>35&nbsp;дней</h3>
-                        использования<br/>CRM
+                        <p>использования<br/>CRM</p>
                     </div>
 
                 </div>
+
+                <Button text="Получить консультацию" />
             </div>
 
         </div>

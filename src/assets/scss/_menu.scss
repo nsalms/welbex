@@ -1,0 +1,34 @@
+.menu {
+  &-vectical, &-horizontal {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &-horizontal {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    gap: 30px;
+
+    &:last-child {
+      justify-content: flex-end;
+    }
+  }
+
+  &-vectical {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px 50px;
+    grid-template-columns: repeat(auto-fit, auto);
+    grid-template-rows: repeat(5, auto);
+  }
+
+  &-dense {
+    gap: 10px;
+  }
+
+  &-wide {
+    gap: 20px;
+  }
+}
