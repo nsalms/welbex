@@ -17,11 +17,6 @@ export default defineConfig({
     modules: {
       localsConvention: "camelCase",
     },
-    preprocessorOptions: {
-      scss: {
-        additionalData: `@use "@/assets/scss/_mixins.scss" as *;`,
-      },
-    },
     postcss: {
       plugins: [
         autoprefixer({}) // add options if needed

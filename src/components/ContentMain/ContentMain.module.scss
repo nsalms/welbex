@@ -1,5 +1,9 @@
+@use "@/assets/scss/vars.scss" as *;
+@use "@/assets/scss/_mixins.scss" as *;
+
 .main {
   display: flex;
+  padding-bottom: 70px;
 }
 
 .main-heading {
@@ -7,9 +11,8 @@
 
   h1 {
     margin-bottom: 30px;
-    font-family: var(--font-body);
-
   }
+  h3 {font-family: $font-secondary; }
 
   strong {
     font-weight: 900;
@@ -23,10 +26,6 @@
   margin-top: 15px;
   text-align: right;
 
-  h3 {
-    font-family: var(--font-body);
-
-  }
   strong {
     font-weight: 700;
     text-transform: uppercase;
@@ -42,15 +41,14 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   margin-top: 40px;
-
-  font-family: var(--font-heading);
+  margin-bottom: 60px;
 
   h3 {
-    font-family: var(--font-body);
-
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-weight: 500;
     margin-bottom: 0.375em;
   }
+  p { font-family: $font-secondary; }
+
 }

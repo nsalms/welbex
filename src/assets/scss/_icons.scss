@@ -1,8 +1,10 @@
+@use "vars" as *;
+
 $icons: "telegram", "viber", "whatsapp";
 
 .icon {
   --icon-size: 1.25rem;
-  --icon-color: var(--text-color);
+  --icon-color: #{$text-color};
 
   display: inline-block;
   flex-shrink: 0;
