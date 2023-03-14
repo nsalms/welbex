@@ -8,3 +8,14 @@ $text-color-gray: #656566;
 
 $bg-color: #0e1014;
 $bg-color-primary: #4077f3;
+
+:root {
+  --screen-lg-max: 75em;
+  --screen-md-max: 64em;
+  --screen-sm-max: 45em;
+  --screen-xs-max: 30em;
+}
+
+@custom-media --lg-viewport only screen and (max-width: 87.5em);
+@custom-media --md-viewport only screen and (max-width: 70em);
+@custom-media --sm-viewport only screen and (max-width: 46em);

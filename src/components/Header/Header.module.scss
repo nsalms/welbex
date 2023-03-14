@@ -7,12 +7,32 @@
   margin-top: 37px;
   margin-bottom: 110px;
   font-weight: 500;
+
+  @media (--md-viewport) {
+    justify-content: space-between;
+  }
+  @media (--sm-viewport) {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0;
+    background: #000;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-transform: uppercase;
+  }
+
 }
 
 .logo {
   width: 165px;
   margin-right: 27px;
   position: relative;
+
+  @media (--sm-viewport) {
+    display: none;
+  }
 
   &__image {
     //margin-bottom: 10px;
@@ -29,6 +49,11 @@
 .contacts {
   display: flex;
   align-items: center;
+  margin-left: auto;
+
+  @media (--md-viewport) {
+    display: none;
+  }
 
   &__tel {
     margin: 0 47px;

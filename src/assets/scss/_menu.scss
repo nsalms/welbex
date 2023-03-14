@@ -7,10 +7,13 @@
   }
 
   &-horizontal {
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
-    margin-right: auto;
+    justify-content: space-evenly;
     gap: 30px;
+    overflow: hidden;
+    height: 1.2rem;
 
     &:last-child {
       justify-content: flex-end;
