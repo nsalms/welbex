@@ -4,6 +4,7 @@ import logo from "../../assets/img/logo_welbex.svg";
 function Header() {
   return (
     <nav className={s.header}>
+      {/* ЛОГОТИП */}
       <div className={s.logo}>
         <a href="/">
           <img className={s.logo__image} src={logo} alt="" width="140" />
@@ -12,6 +13,8 @@ function Header() {
           крупный интегратор CRM в&nbsp;Росcии и&nbsp;ещё 8&nbsp;странах
         </h6>
       </div>
+
+      {/* MENU */}
       <ul className="menu-horizontal">
         <li>
           <a href="#">Услуги</a>
@@ -29,6 +32,8 @@ function Header() {
           <a href="#">Сертификаты</a>
         </li>
       </ul>
+
+      {/* КОНТАКТЫ */}
       <div className={s.contacts}>
         <div className={s.contacts__tel}>
           <a href="tel:75555555555">+7&nbsp;555&nbsp;555-55-55</a>

@@ -1,32 +1,57 @@
 @use "@/assets/scss/vars.scss" as *;
 
 .footer {
-  padding: 55px 0 20px 0;
+  padding: 55px 0 20px;
 
   h4 {
-    text-transform: uppercase;
     margin-bottom: 20px;
     color: $text-color-gray;
+    text-transform: uppercase;
   }
+
+  /* Блоки с меню */
   .footer-nav {
-    display: flex;
-    align-items: flex-start;
-    gap: 100px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(12, 1fr);
+
+    @media (--sm-viewport) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &-col-1 {
+      grid-column: span 3;
+    }
+
+    &-col-2 {
+      grid-column: span 5;
+    }
+
+    &-col-3 {
+      grid-column: span 4;
+      text-align: right;
+
+      @media (--sm-viewport) {
+        text-align: left;
+      }
+    }
   }
 
-  .footer-nav-col:last-child {
-    text-align: right;
-    margin-left: auto;
-  }
-
+  /* Copyright */
   .footer-legal {
     padding-top: 33px;
-    font-size: 0.75rem;
     font-family: $font-secondary;
+    font-size: 0.75rem;
     text-align: right;
+
+    @media (--sm-viewport) {
+      text-align: left;
+    }
+
     p {
       margin-bottom: 5px;
     }
+
     a {
       text-decoration: underline;
     }

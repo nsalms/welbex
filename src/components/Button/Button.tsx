@@ -1,7 +1,7 @@
 import s from "./Button.module.scss";
 
 interface ButtonProps {
-  text: String;
+  text: string;
 }
 
 function Button({ text }: ButtonProps) {

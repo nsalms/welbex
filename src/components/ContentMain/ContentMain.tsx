@@ -4,6 +4,8 @@ import Button from "../Button/Button";
 function ContentMain() {
   return (
     <div className={s.main}>
+
+      {/*LEFT BLOCK*/}
       <div className={s.mainHeading}>
         <h1>
           Зарабатывайте
@@ -19,6 +21,7 @@ function ContentMain() {
         </h3>
       </div>
 
+      {/*RIGHT BLOCK*/}
       <div className={s.mainSide}>
         <h3>
           Вместе с{" "}

@@ -11,31 +11,25 @@
   @media (--md-viewport) {
     justify-content: space-between;
   }
+
   @media (--sm-viewport) {
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 0;
-    background: #000;
-    margin-left: -1rem;
-    margin-right: -1rem;
-    padding-left: 1rem;
     padding-right: 1rem;
+    padding-left: 1rem;
+    margin: 0 -1rem 40px;
+    background: #000;
     text-transform: uppercase;
   }
-
 }
 
 .logo {
+  position: relative;
   width: 165px;
   margin-right: 27px;
-  position: relative;
 
   @media (--sm-viewport) {
     display: none;
-  }
-
-  &__image {
-    //margin-bottom: 10px;
   }
 
   &__sub {

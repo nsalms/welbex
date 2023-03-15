@@ -1,5 +1,5 @@
-$font-fallback: Avenir, Helvetica, Arial, sans-serif;
-$font-primary: Inter, $font-fallback;
+$font-fallback: avenir, helvetica, arial, sans-serif;
+$font-primary: inter, $font-fallback;
 $font-secondary: "Montserrat", $font-fallback;
 $line-height: 1.2;
 
@@ -10,10 +10,9 @@ $bg-color: #0e1014;
 $bg-color-primary: #4077f3;
 
 :root {
-  --screen-lg-max: 75em;
-  --screen-md-max: 64em;
-  --screen-sm-max: 45em;
-  --screen-xs-max: 30em;
+  --screen-lg-max: 87.5em;
+  --screen-md-max: 70em;
+  --screen-sm-max: 46em;
 }
 
 @custom-media --lg-viewport only screen and (max-width: 87.5em);

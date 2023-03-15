@@ -5,7 +5,8 @@ function Footer() {
     <>
       <div className={s.footer}>
         <div className={s.footerNav}>
-          <div className={s.footerNavCol}>
+          {/* О КОМПАНИИ */}
+          <div className={`${s.footerNavCol} ${s.footerNavCol1}`}>
             <h4>О компании</h4>
             <ul className="menu-vectical">
               <li>
@@ -17,7 +18,8 @@ function Footer() {
             </ul>
           </div>
 
-          <div className={s.footerNavCol}>
+          {/* МЕНЮ */}
+          <div className={`${s.footerNavCol} ${s.footerNavCol2}`}>
             <h4>Меню</h4>
             <ul className="menu-vectical">
               <li>
@@ -53,7 +55,8 @@ function Footer() {
             </ul>
           </div>
 
-          <div className={s.footerNavCol}>
+          {/* КОНТАКТЫ */}
+          <div className={`${s.footerNavCol} ${s.footerNavCol3}`}>
             <h4>Контакты</h4>
             <ul className="menu-vectical menu-wide">
               <li>
@@ -85,6 +88,7 @@ function Footer() {
           </div>
         </div>
 
+        {/* COPYRIGHT */}
         <div className={s.footerLegal}>
           <p>©WELBEX 2022. Все права защищены.</p>
           <a href="#">Политика конфиденциальности</a>

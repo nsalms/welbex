@@ -1,0 +1,94 @@
+.dynamic-background {
+  position: absolute;
+  z-index: -99;
+  top: 0;
+  left: 50%;
+  pointer-events: none;
+  transform: translate(-50%, 0);
+
+  > * {
+    position: absolute;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-name: slidein;
+  }
+}
+
+.purple-ball {
+  top: -13px;
+  left: 133px;
+  width: 94px;
+  height: 94px;
+  animation-duration: 9s;
+  background: url("./src/assets/img/background/purple ball.png");
+}
+
+.red-ball {
+  top: 71px;
+  left: -214px;
+  width: 117px;
+  height: 117px;
+  animation-duration: 15s;
+  animation-name: slideout;
+  background: url("./src/assets/img/background/red ball.png");
+}
+
+.red-ball-2 {
+  top: 536px;
+  left: 119px;
+  width: 62px;
+  height: 62px;
+  animation-duration: 50s;
+  animation-name: slidelight;
+  background: url("./src/assets/img/background/red ball 2.png");
+}
+
+.purple-light {
+  top: -557px;
+  left: -492px;
+  width: 1043px;
+  height: 1043px;
+  animation-duration: 20s;
+  animation-name: slidelight;
+  background: url("./src/assets/img/background/purple light.png");
+}
+
+.red-light {
+  top: -224px;
+  left: -1236px;
+  width: 1095px;
+  height: 1095px;
+  animation-duration: 10s;
+  animation-name: slidelight;
+  background: url("./src/assets/img/background/red light.png");
+}
+
+@keyframes slidein {
+  from {
+    transform: translate(-10px, -50px);
+  }
+
+  to {
+    transform: translate(10px, 50px);
+  }
+}
+
+@keyframes slideout {
+  from {
+    transform: translateY(50px);
+  }
+
+  to {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes slidelight {
+  from {
+    transform: translate(-100px, -100px);
+  }
+
+  to {
+    transform: translate(100px, 100px);
+  }
+}

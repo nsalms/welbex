@@ -9,6 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@typescript-eslint/parser": "^5.55.0",
+    "eslint-config-prettier": "^8.7.0",
+    "prettier": "^2.8.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -16,13 +19,30 @@
     "@types/node": "^18.15.3",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
     "@vitejs/plugin-react": "^2.0.1",
     "autoprefixer": "^10.4.14",
+    "eslint": "^8.36.0",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2",
     "modern-css-reset": "^1.4.0",
     "postcss": "^8.4.21",
     "postcss-custom-media": "^9.1.2",
     "sass": "^1.59.2",
-    "typescript": "^4.6.4",
-    "vite": "^3.0.7"
+    "stylelint": "^15.2.0",
+    "stylelint-config-idiomatic-order": "^9.0.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^30.0.1",
+    "stylelint-order": "^6.0.3",
+    "stylelint-prettier": "^3.0.0",
+    "stylelint-scss": "^4.5.0",
+    "typescript": "^4.9.5",
+    "vite": "^3.0.7",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-stylelint": "^4.3.0"
   }
 }
