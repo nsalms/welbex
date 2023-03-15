@@ -20,7 +20,7 @@
   width: 94px;
   height: 94px;
   animation-duration: 9s;
-  background: url("./src/assets/img/background/purple ball.png");
+  background: url("/src/assets/img/background/purple ball.png");
 }
 
 .red-ball {
@@ -30,7 +30,7 @@
   height: 117px;
   animation-duration: 15s;
   animation-name: slideout;
-  background: url("./src/assets/img/background/red ball.png");
+  background: url("/src/assets/img/background/red ball.png");
 }
 
 .red-ball-2 {
@@ -40,7 +40,7 @@
   height: 62px;
   animation-duration: 50s;
   animation-name: slidelight;
-  background: url("./src/assets/img/background/red ball 2.png");
+  background: url("/src/assets/img/background/red ball 2.png");
 }
 
 .purple-light {
@@ -50,7 +50,7 @@
   height: 1043px;
   animation-duration: 20s;
   animation-name: slidelight;
-  background: url("./src/assets/img/background/purple light.png");
+  background: url("/src/assets/img/background/purple light.png");
 }
 
 .red-light {
@@ -60,7 +60,7 @@
   height: 1095px;
   animation-duration: 10s;
   animation-name: slidelight;
-  background: url("./src/assets/img/background/red light.png");
+  background: url("/src/assets/img/background/red light.png");
 }
 
 @keyframes slidein {
